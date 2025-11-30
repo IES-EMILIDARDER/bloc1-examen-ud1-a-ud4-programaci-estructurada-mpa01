@@ -34,7 +34,7 @@ public class UtilExamen {
         for(int i = 0; i < array1.length; i++){
             for(int j = 0; j < array2.length; j++){
                 if(array1[i] == array2[j]){
-                    repetits.add(array2[j]);
+                    repetits.add(array2[j]);  // CORRECCIÓ: te falta 'break' per a no repetir els valors
                 }
             }
         }
@@ -66,7 +66,7 @@ public class UtilExamen {
         ArrayList<Integer> RepOrd = new ArrayList<>();   
         
         boolean repetido;
-        for(int i = 0; i < array1.length; i++){
+        for(int i = 0; i < array1.length; i++){  // CORRECCIÓ: deberias usar los metodos anteriormente creados
             repetido = false;
             for(int j = 0; j < array2.length; j++){
                 if(array1[i] == array2[j]){
